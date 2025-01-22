@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main() 
 {
-    char a;
+    char ch;
 
-    scanf("%c",&a);
-    printf("ASCII value: %d",a,a);
+    scanf("%c",&ch);
+    printf("ASCII value: %d",ch);
 
     return 0;
 }
