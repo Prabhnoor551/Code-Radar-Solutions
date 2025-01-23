@@ -9,7 +9,7 @@ int main()
     if(a>=0)
     {
     printf("True");
-    if else(b>=0)
+    else if(b>=0)
     {
         printf("True");
 
