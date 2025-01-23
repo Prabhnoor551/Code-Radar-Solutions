@@ -1,18 +1,17 @@
-#include <stdio.h>
-int main() 
-{   int a,b;
+#include<stdio.h>    
+int main()
+{
+    int a,b;
     scanf("%d",&a);
     scanf("%d",&b);
-    if(a>=0)
-    {
-    printf("True");
+    if(a>=0){
+        printf("True");
     }
-    else if(b>=0)
-    {
+    else if(b>=0){
         printf("True");
     }
     else{
-    printf("False");
+        printf("False");
     }
     return 0;
 }
