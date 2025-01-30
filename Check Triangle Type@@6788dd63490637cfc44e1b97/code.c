@@ -2,8 +2,8 @@
 int main()
 {
     int a,b,c;
-    
-    if(a==b && b==c && c==b)
+
+    if(a==b && b==c && c==a)
     {
         printf("Equilateral");
     }
