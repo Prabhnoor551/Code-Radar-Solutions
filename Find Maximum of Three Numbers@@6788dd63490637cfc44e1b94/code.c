@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main()
+{   
     int a,b,c;
     scanf("%d",&a);
     scanf("%d",&b);
@@ -8,14 +9,9 @@ int main()
     {
         printf("%d",a);
     }
-    else if(b>=a && b>=c)
-    {
-        printf("%d",b); 
-    }
-    else
-    {
-        printf("%d",c);
-    }
-
+    else if(b>=a && b>=c){
+        printf("%d",b); }
+    else{
+        printf("%d",c);}
     return 0;
 }
