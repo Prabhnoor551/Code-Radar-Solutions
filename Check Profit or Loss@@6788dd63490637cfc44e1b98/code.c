@@ -6,7 +6,7 @@ int main()
     scanf("%d",&a);
     scanf("%d",&b);
 
-    if(a>b){
+    if(b>a){
         printf("Profit");
     }
     else{
