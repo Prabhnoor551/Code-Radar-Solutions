@@ -5,7 +5,11 @@ int main()
 
     scanf("%d",&a);
 
-    if(1<=a<=100)
+    if(a>1)
+    {
+        printf("In Range");
+    }
+    else if(a<100)
     {
         printf("In Range");
     }
