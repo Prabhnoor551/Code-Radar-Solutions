@@ -6,7 +6,7 @@ int main()
 
    scanf("%d",&a);
    scanf("%d",&b);
-   scanf("%c ",&sign);
+   scanf(" %c",&sign);
 
    switch(sign)
    {       
