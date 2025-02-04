@@ -9,21 +9,19 @@ int main()
     {
         if(ch=="a" || ch=="e" || ch=="i" || ch=="o" || ch=="u")
         {
-           printf("Vowel");
+           printf("Vowel".ch);
         }
         else
         {
-            printf("Consonant");
+            printf("Consonant",ch);
         }
     }
     else if(isdigit(ch))
     {
-        printf("Digit");
+        printf("Digit",ch);
     }
     else{
-        printf("Special Character");
+        printf("Special Character",ch);
     }
-
-
     return 0;
 }
