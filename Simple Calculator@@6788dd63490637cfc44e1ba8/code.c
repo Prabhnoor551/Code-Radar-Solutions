@@ -2,13 +2,13 @@
 int main() 
 {
    int a,b;
-   char sign='s';
+   char sign;
 
    scanf("%d",&a);
    scanf("%d",&b);
    scanf("%c",&sign);
 
-   switch(s)
+   switch(sign)
    {       
         case '+':
         printf("%d",a+b);
@@ -18,7 +18,7 @@ int main()
         case '*':
         printf("%d",a*b);
         break;
-        case '/'
+        case '/':
         printf("%d",a/b);
         break;
         default:
