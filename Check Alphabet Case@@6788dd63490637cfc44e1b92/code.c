@@ -11,7 +11,7 @@ int main()
     }
     else if(a>=97 && a<=122)
     {
-        printf("Lowecase");
+        printf("Lowercase");
     }
     else{
         printf("Not an alphabet");
