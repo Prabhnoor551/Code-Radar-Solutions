@@ -12,6 +12,7 @@ int main()
             printf("%d ",num);
             num++;
         }
+    printf("\n");
     }
     return 0;
 }
