@@ -1,4 +1,4 @@
-#include <ctype.h>
+#include <stdio.h>
 int main() 
 {
     char ch;
@@ -16,7 +16,7 @@ int main()
             printf("Consonant",ch);
         }
     }
-    else if(isdigit(ch))
+    else if (isdigit(ch))
     {
         printf("Digit",ch);
     }
