@@ -15,7 +15,7 @@ int main()
         printf("Different Sign");
     }
     else{
-        printf("Same Sign")
+        printf("Same Sign");
     }
     return 0;
 }
