@@ -3,6 +3,8 @@ int main()
 {
     int num;
 
+    scanf("%d",&num);
+
     switch(num)
     {
         case 1:
