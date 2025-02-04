@@ -2,7 +2,6 @@
 int main() 
 {
     char ch;
-
     scanf("%c",&ch);
 
     if (isalpha(ch))
@@ -10,7 +9,7 @@ int main()
      
         if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
         {
-           printf("Vowel".ch);
+           printf("Vowel",ch);
         }
         else
         {
