@@ -6,12 +6,16 @@ int main()
     scanf("%d",&a);
     scanf("%d",&b);
 
-    if(a>0 && b>0)
+    if(a>0 && b<0)
     {
-        printf("Same Sign");
+        printf("Different Sign");
+    }
+    else if(a<0 && b>0)
+    {
+        printf("Different Sign");
     }
     else{
-        printf("Different Sign");
+        printf("Same Sign")
     }
     return 0;
 }
