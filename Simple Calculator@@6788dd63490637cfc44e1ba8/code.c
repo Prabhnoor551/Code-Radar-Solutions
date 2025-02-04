@@ -2,13 +2,13 @@
 int main() 
 {
    int a,b;
-   char sign;
+   char sign='s';
 
    scanf("%d",&a);
    scanf("%d",&b);
    scanf("%c",&sign);
 
-   switch(sign)
+   switch(s)
    {       
         case '+':
         printf("%d",a+b);
