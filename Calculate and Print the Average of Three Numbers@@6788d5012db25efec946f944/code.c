@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() 
 {
-    int a,b,c,d;
+    float a,b,c,d;
 
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c);
 
     float d= (a+b+c)/3;
  
