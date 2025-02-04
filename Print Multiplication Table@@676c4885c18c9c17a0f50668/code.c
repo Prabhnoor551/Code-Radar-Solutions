@@ -8,7 +8,7 @@ int main()
     for(x=1; x<=10; x=x+1)
     {
         z=x*y;
-        printf("%d x %d = %d\n", x,y,z);
+        printf("%d x %d = %d\n", y,x,z);
     }
     return 0;
 }
