@@ -4,7 +4,9 @@ int main()
    int a,b;
    char sign;
 
-   scanf("%d %d %c",&a, &b, &sign);
+   scanf("%d",&a); 
+   scanf("%d",&b);
+   scanf(" %c",&sign);
 
    switch(sign)
    {       
