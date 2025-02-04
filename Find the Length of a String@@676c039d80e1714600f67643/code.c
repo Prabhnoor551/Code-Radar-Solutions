@@ -2,10 +2,11 @@
 int main() 
 {
     char str[100];
+    int x;
 
     scanf("%c", &str);
     
-    x= str(len);
+    x= strlen(str);
 
     printf("%d", x );
     return 0;
