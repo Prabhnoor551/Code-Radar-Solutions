@@ -11,7 +11,7 @@ int main()
         printf("31");
         break;
         case 2:
-        printf("28",);
+        printf("28");
         break;
         case 3:
         printf("31",);
