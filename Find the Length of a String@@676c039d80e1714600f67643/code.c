@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include<string.h>
 int main() 
 {
-    char str[100];
+    char str[];
     int x;
 
     scanf("%c", &str);
     
     x= strlen(str);
 
-    printf("%d", x );
+    printf("%d", x);
     return 0;
 }
