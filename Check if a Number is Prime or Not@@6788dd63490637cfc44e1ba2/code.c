@@ -5,21 +5,21 @@ int main()
 
     scanf("%d",a);
 
-    if(a<2)
+    if(a==2)
     {
-        printf("Not Prime");
+        printf("Prime");
+        return 0;
     }
 
-    for(int i=2; i*i<=a; i++)
+    for(int i=2; i<=a/2; i++)
     {
         if(a%i==0)
         {
             printf("Not Prime");
+            return 0;
         }
     }
-    else
-    {
-        printf("Prime");
-    }
+    printf("Prime");
+    
     return 0;
 }
