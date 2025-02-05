@@ -7,7 +7,7 @@ int main()
     scanf("%d",&x);
     scanf("%d",&n);
 
-    x = (x - n) & x;
+    x = x & (x - n);
     printf("%d",x);
 
     return 0;
