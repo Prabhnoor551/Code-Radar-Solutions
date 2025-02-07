@@ -8,7 +8,7 @@ int main()
     scanf("%d",&x);
     scanf("%d",&i);
 
-    mask = 1 << (i-1);
+    mask = (1 << (i-1)) | (1<<i);
 
     x = x | mask;
 
