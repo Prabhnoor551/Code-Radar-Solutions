@@ -6,7 +6,7 @@ int main()
     scanf("%d",&m);
     scanf("%d",&n);
 
-    mask = (m >> (n-1)) & 1;
+    mask = (m >> n) & 1;
 
     printf("%d",mask);
 
