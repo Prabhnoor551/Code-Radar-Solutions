@@ -7,10 +7,8 @@ int main()
 
     for(i=1; i<=r; i++)
     {
-        for(j=1; j<=r-1; j++)
-          printf("");
-        for(k=1; k<=2*i-1; k++)
-          printf("%c ", j-1+'A');
+        for(j=1; j<=i; j++)
+          printf("%c ", 'A'+j-1);
     printf("\n");
     }
     return 0;
