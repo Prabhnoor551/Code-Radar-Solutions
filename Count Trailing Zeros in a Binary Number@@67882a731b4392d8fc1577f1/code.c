@@ -4,20 +4,20 @@ int countTrailingZeroes(int n)
 {
     int count = 0;
 
-    while((n&1) == 0 && n!=0)
+    while(n>0 && (n&1)==0)
     {
         count ++;
-        n >> 1;
+        n >>= 1;
     }
     return count;
 }
 int main() 
 {
-    int n;
+    int num;
 
-    scanf("%d",&n);
+    scanf("%d",&num);
 
-    int result = countTrailingZeroes(n);
+    int result = countTrailingZeroes(num);
 
     printf("%d",result);
 
