@@ -7,15 +7,10 @@ int main() {
     int number;
 
     // Asking user for input
-    printf("Enter a number: ");
-    scanf("%d", &number);  // Ensure user inputs a valid integer
+    scanf("%d", &number);  // Take input without additional text
 
-    // Checking if the number is prime
-    if (isPrime(number)) {
-        printf("%d is a prime number.\n", number);
-    } else {
-        printf("%d is not a prime number.\n", number);
-    }
+    // Output 1 if prime, otherwise 0
+    printf("%d\n", isPrime(number)); 
 
     return 0; // Return 0 indicates successful execution
 }
@@ -36,4 +31,3 @@ int isPrime(int num) {
 
     return 1;  // num is prime
 }
-
