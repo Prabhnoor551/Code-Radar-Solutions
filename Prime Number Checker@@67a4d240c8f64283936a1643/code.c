@@ -13,7 +13,7 @@ int isPrime(int num) {
     return 1; // Prime number
 }
 
-int main() {
+/*int main() {
     int t;
 
     // Read the number of test cases
@@ -29,6 +29,7 @@ int main() {
         // Output 1 if prime, 0 if not prime
         printf("%d\n", isPrime(num));
     }
+    */
 
     return 0;
 }
