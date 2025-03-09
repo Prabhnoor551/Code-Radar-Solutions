@@ -8,7 +8,7 @@ int main() {
 
     // Asking user for input
     printf("Enter a number: ");
-    scanf("%d", &number);  // Make sure this is correctly typed
+    scanf("%d", &number);  // Ensure user inputs a valid integer
 
     // Checking if the number is prime
     if (isPrime(number)) {
@@ -17,14 +17,14 @@ int main() {
         printf("%d is not a prime number.\n", number);
     }
 
-    return 0;
+    return 0; // Return 0 indicates successful execution
 }
 
 // Function to check whether a number is prime
 int isPrime(int num) {
     // Handling special cases
     if (num <= 1) {
-        return 0;  // 0 and 1 are not prime
+        return 0;  // 0 and 1 are not prime numbers
     }
 
     // Checking divisibility from 2 to sqrt(num)
@@ -36,4 +36,3 @@ int isPrime(int num) {
 
     return 1;  // num is prime
 }
-
