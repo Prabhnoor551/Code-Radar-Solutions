@@ -1,19 +1,15 @@
 #include <stdio.h>
-int main() 
-{
-    int x;
-    int i;
-    int mask; // = 1<<(i-1);
 
-    scanf("%d",&x);
-    scanf("%d",&i);
+int setNthBit(int num, int n) {
+    return num | (1 << n); // Set the nth bit using bitwise OR
+}
 
-    mask = (1 << (i-1)) | (1<<i);
+int main() {
+    int num, n;
+    scanf("%d %d", &num, &n);
 
-    x = x | mask;
-
-    printf("%d\n",x);
-
+    int updatedNum = setNthBit(num, n);
+    printf("%d\n", updatedNum);
 
     return 0;
 }
