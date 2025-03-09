@@ -36,3 +36,4 @@ int isPrime(int num) {
 
     return 1;  // num is prime
 }
+
