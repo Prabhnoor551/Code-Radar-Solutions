@@ -29,7 +29,7 @@ int isPrime(int num) {
         // Output 1 if prime, 0 if not prime
         printf("%d\n", isPrime(num));
     }
-    */
+    
 
     return 0;
-}
+}*/
