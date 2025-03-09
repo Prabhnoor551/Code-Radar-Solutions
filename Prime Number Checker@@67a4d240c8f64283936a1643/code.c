@@ -1,33 +1,34 @@
 #include <stdio.h>
 
-// Function prototype
-int isPrime(int num);
-
-int main() {
-    int number;
-
-    // Asking user for input
-    scanf("%d", &number);  // Take input without additional text
-
-    // Output 1 if prime, otherwise 0
-    printf("%d\n", isPrime(number)); 
-
-    return 0; // Return 0 indicates successful execution
-}
-
-// Function to check whether a number is prime
+// Function to check if a number is prime
 int isPrime(int num) {
-    // Handling special cases
     if (num <= 1) {
-        return 0;  // 0 and 1 are not prime numbers
+        return 0; // Numbers less than or equal to 1 are not prime
     }
-
-    // Checking divisibility from 2 to sqrt(num)
-    for (int i = 2; i * i <= num; i++) {
+    for (int i = 2; i * i <= num; i++) { // Check for factors up to sqrt(num)
         if (num % i == 0) {
-            return 0;  // num is divisible by i, so it's not prime
+            return 0; // Not a prime number
         }
     }
+    return 1; // Prime number
+}
 
-    return 1;  // num is prime
+int main() {
+    int t;
+
+    // Read the number of test cases
+    scanf("%d", &t);
+
+    // Loop through each test case
+    while(t--) {
+        int num;
+
+        // Read the number to check for primality
+        scanf("%d", &num);
+
+        // Output 1 if prime, 0 if not prime
+        printf("%d\n", isPrime(num));
+    }
+
+    return 0;
 }
