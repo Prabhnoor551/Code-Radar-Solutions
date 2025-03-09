@@ -8,7 +8,7 @@ int main() {
 
     // Asking user for input
     printf("Enter a number: ");
-    scanf("%d", &number);
+    scanf("%d", &number);  // Make sure this is correctly typed
 
     // Checking if the number is prime
     if (isPrime(number)) {
@@ -36,3 +36,4 @@ int isPrime(int num) {
 
     return 1;  // num is prime
 }
+
