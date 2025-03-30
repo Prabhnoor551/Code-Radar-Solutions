@@ -29,7 +29,7 @@ int main() {
     // Count the digits of each element in the array
     for (int i = 0; i < n; i++) {
         int digits = countDigits(a[i]);
-        printf("Element %d has %d digits\n", a[i], digits);
+        printf("%d\n",  digits);
     }
 
     return 0;
