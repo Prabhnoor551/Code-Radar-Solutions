@@ -13,7 +13,7 @@ int main()
     int count=0;
     
 
-for(int i=0; i<1; i++)
+for(int i=0; i<n; i++)
 {
     int m = a[i];
     int rem,sum=0;
