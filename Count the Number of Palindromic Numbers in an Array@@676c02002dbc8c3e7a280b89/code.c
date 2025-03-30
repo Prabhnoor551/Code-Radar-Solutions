@@ -18,7 +18,7 @@ int main()
         sum = sum*10+rem;
         m = m/10;
     }
-
+    int i;
     if(a[i] == sum)
     {
          count++;
