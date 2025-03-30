@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int main()
 {
     int n;
@@ -11,7 +12,8 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
-        int m = a[i]; int sum = 0;
+        int m = abs[a[i]]; 
+        int sum = 0;
         while(m!=0)
         {
             
@@ -19,10 +21,7 @@ int main()
             sum = sum+rem;
             m = m/10;
         }
-        if (sum > 0)
-        {
-            printf("%d ", sum);
-        }
+
     }
 
     return 0;
