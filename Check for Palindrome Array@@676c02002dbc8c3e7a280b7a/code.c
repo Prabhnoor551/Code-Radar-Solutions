@@ -20,9 +20,9 @@ int main()
 
         while(m!=0)
         {
-            int rem = n%10;
+            int rem = m%10;
             sum = sum*10+rem;
-            n = n/10;
+            m = m/10;
         }
     }
 
