@@ -5,13 +5,13 @@ int main()
     int n;
 
     // Taking the size of the array from the user
-    printf("Enter the number of elements in the array: ");
+   
     scanf("%d", &n);
 
     int a[n];  // Declare an array of size n
 
     // Taking the elements of the array from the user
-    printf("Enter %d elements: ", n);
+    
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
@@ -27,9 +27,9 @@ int main()
 
     // Output the result of the sorted check
     if (isSorted) {
-        printf("The array is sorted.\n");
+        printf("Sorted.\n");
     } else {
-        printf("The array is NOT sorted.\n");
+        printf("Not Sorted.\n");
     }
 
     return 0;
