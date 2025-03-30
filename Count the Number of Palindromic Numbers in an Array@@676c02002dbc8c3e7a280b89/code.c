@@ -12,6 +12,7 @@ int main()
 
     int rem,sum=0,count=0;
     int m = a[i];
+    int i;
 
 for(int i=0; i<1; i++)
 {
@@ -22,7 +23,7 @@ for(int i=0; i<1; i++)
         sum = sum*10+rem;
         m = m/10;
     }
-    int i;
+    
     if(a[i] == sum)
     {
          count++;
