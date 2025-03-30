@@ -17,7 +17,7 @@ int main()
         
         int m = a[i];
         int sum = 0;
-
+        int original = m
         while(m!=0)
         {
             int rem = m%10;
@@ -25,7 +25,7 @@ int main()
             m = m/10;
         }
     
-    if(sum != a[i])
+    if(sum != original)
     {
         ispalindrome = 0;
         break;
