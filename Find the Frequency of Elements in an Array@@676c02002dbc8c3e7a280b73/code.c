@@ -28,7 +28,7 @@ int main() {
             }
         }
 
-        printf("%d\n", a[i], count);
+        printf("%d %d\n", a[i], count);
     }
 
     return 0;
