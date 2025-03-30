@@ -19,8 +19,10 @@ int main()
             sum = sum+rem;
             m = m/10;
         }
-
-        printf("%d ", sum);
+        if (sum > 0)
+        {
+            printf("%d ", sum);
+        }
     }
 
     return 0;
