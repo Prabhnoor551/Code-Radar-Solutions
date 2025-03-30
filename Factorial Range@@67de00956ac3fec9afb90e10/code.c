@@ -20,7 +20,7 @@ void factorialRange(int start, int end) {
     }
 
     for (int i = start; i <= end; i++) {  // Corrected the loop condition
-        printf("%d\n", i, factorial(i));  // Print formatted output
+        printf("%d\n", factorial(i));  // Print formatted output
     }
 }
 
