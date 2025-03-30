@@ -1,45 +1,39 @@
 #include<stdio.h>
+
 int main()
 {
     int n;
+    scanf("%d", &n);  // Input the number of elements in the array
 
-    scanf("%d", &n);
+    int a[n];  // Declare the array
 
-    int a[n];
-
-    for(int i=0; i<n; i++)
+    // Input array elements
+    for(int i = 0; i < n; i++)
     {
-        scanf("%d ", &a[i]);
+        scanf("%d", &a[i]);
     }
-    int ispalindrome = 1;
-    for(int i=0; i<n;i++)
-    {
-        
-        int m = a[i];
-        int sum = 0;
-        int original = m;
 
-        while(m!=0)
-        {
-            int rem = m%10;
-            sum = sum*10+rem;
-            m = m/10;
+    // Check if the array is a palindrome
+    int isPalindrome = 1;  // Assume the array is a palindrome initially
+
+    // Compare elements from the front and the back
+    for(int i = 0; i < n / 2; i++)
+    {
+        if(a[i] != a[n - i - 1]) {
+            isPalindrome = 0;  // Not a palindrome
+            break;
         }
-    
-    if(sum != original)
-    {
-        ispalindrome = 0;
-        break;
     }
-}  
-    if(ispalindrome)
+
+    // Output result based on palindrome check
+    if(isPalindrome)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else
     {
-        printf("NO");
+        printf("NO\n");
     }
-    
+
     return 0;
 }
