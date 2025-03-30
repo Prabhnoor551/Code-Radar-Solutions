@@ -27,9 +27,9 @@ int main()
 
     // Output the result of the sorted check
     if (isSorted) {
-        printf("Sorted.\n");
+        printf("Sorted\n");
     } else {
-        printf("Not Sorted.\n");
+        printf("Not Sorted\n");
     }
 
     return 0;
