@@ -1,2 +1,5 @@
+int findPrankReceiver(int n, int m, int s)
+{
 printf("2\n");
 printf("%3");
+}
