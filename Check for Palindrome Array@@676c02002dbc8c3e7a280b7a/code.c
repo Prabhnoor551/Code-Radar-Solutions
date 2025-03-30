@@ -9,7 +9,7 @@ int main()
 
     for(int i=0; i<n; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d ", &a[i]);
     }
     int ispalindrome = 1;
     for(int i=0; i<n;i++)
@@ -18,7 +18,7 @@ int main()
         int m = a[i];
         int sum = 0;
         int original = m;
-        
+
         while(m!=0)
         {
             int rem = m%10;
