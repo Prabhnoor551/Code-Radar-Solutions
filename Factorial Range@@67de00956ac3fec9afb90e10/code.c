@@ -1,4 +1,4 @@
-int fact(int n)
+int factorialRange(int n)
 {
     if(n==0)
     {
