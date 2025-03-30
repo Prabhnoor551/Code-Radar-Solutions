@@ -14,7 +14,7 @@ int main()
     
     for(int i=0; i<n;i++)
     {
-        int i;
+        
         int m = a[i];
         int sum = 0;
 
@@ -25,7 +25,7 @@ int main()
             m = m/10;
         }
     }
-
+    int i;
     if(a[i] == sum)
     {
         printf("YES");
