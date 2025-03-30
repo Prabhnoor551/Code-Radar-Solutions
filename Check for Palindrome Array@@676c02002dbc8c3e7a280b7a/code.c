@@ -11,7 +11,7 @@ int main()
     {
         scanf("%d", &a[i]);
     }
-    
+    int ispalindrome = 1;
     for(int i=0; i<n;i++)
     {
         
@@ -25,8 +25,13 @@ int main()
             m = m/10;
         }
     
-    int i;
-    if(a[i] == sum)
+    if(sum != a[i])
+    {
+        ispalindrome = 0;
+        break;
+    }
+    
+    if(ispalindrome)
     {
         printf("YES");
     }
