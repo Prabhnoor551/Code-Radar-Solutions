@@ -15,8 +15,8 @@ int main()
 
 for(int i=0; i<1; i++)
 {
-    int rem,sum=0;
     int m = a[i];
+    int rem,sum=0;
     int i;
     while(m!=0)
     {
