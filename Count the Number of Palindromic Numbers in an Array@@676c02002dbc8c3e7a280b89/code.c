@@ -19,7 +19,7 @@ int main()
        int m = a[i];
        int rem,sum=0;
     
-       while(m!=0)
+       while(m!=0 && m>0)
        {
            rem = m%10;
            sum = sum*10+rem;
