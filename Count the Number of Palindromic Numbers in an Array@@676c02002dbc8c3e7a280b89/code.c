@@ -7,7 +7,7 @@ int main()
     int a[n];
     for(int i=0; i<n; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d ", &a[i]);
     }
 
     int count=0;
@@ -16,7 +16,7 @@ int main()
 for(int i=0; i<n; i++)
 {
     int m = a[i];
-    int rem,sum=0;
+    int sum=0,rem;
     int i;
     while(m!=0)
     {
