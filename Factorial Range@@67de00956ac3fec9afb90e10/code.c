@@ -7,6 +7,6 @@ int factorialRange(int n)
 
     else
     {
-        return n*factorialrange(n-1);
+        return n*factorialRange(n-1);
     }
 }
