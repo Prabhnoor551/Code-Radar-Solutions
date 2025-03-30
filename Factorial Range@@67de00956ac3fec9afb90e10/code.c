@@ -1,12 +1,30 @@
-int factorialRange(int n)
+int factorial(int num)
 {
-    if(n==0)
+    if( num == 0 || num == 1)
     {
         return 1;
     }
 
-    else
+    int fact = 1;
+
+    for(int i=2; i<num ; i++)
     {
-        return n*factorialRange(n-1);
+        fact *=i;
+
     }
+
+    return fact;
+
+}
+
+int factorialRange(int start, int end)
+{
+    if ( start > end || start<0 || end <0)
+    {
+        printf("Invalid range");
+    }
+    for (int i = start; end=start; i++)
+    {
+        printf("%d", factorial());
+    } 
 }
