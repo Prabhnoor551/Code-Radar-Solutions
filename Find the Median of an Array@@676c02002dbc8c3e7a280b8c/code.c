@@ -18,7 +18,7 @@ int main()
     
     int avg = sum/2;
 
-    printf("5d", avg);
+    printf("%d", avg);
 
     return 0;
 }
