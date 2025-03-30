@@ -11,11 +11,11 @@ int main()
     }
     for(int i=0; i<n; i++)
     {
-        int m = a[i];
+        int m = a[i]; int sum = 0;
         while(m!=0)
         {
-            int sum = 0;
-            int rem = m%10
+            
+            int rem = m%10;
             sum = sum+rem;
             m = m/10;
         }
