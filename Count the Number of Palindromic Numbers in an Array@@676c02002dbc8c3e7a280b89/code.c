@@ -10,9 +10,13 @@ int main()
         scanf("%d ", &a[i]);
     }
 
-    int m,rem,sum=0,count;
+    int rem,sum=0,count=0;
+    int m = a[i];
 
-    if(m!=0)
+for(int i=0; i<1; i++)
+{
+
+    while(m!=0)
     {
         rem = m%10;
         sum = sum*10+rem;
@@ -23,7 +27,7 @@ int main()
     {
          count++;
     }
-
+}
     printf("%d", count);
 
     return 0;
