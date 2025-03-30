@@ -25,6 +25,6 @@ int factorialRange(int start, int end)
     }
     for (int i = start; end=start; i++)
     {
-        printf("%d", factorial());
+        printf("%d", factorial(num));
     } 
 }
