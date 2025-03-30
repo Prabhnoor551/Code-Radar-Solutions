@@ -17,7 +17,8 @@ int main()
         
         int m = a[i];
         int sum = 0;
-        int original = m
+        int original = m;
+        
         while(m!=0)
         {
             int rem = m%10;
