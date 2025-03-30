@@ -10,13 +10,14 @@ int main()
         scanf("%d ", &a[i]);
     }
 
-    int rem,sum=0,count=0;
-    int m = a[i];
-    int i;
+    int count=0;
+    
 
 for(int i=0; i<1; i++)
 {
-
+    int rem,sum=0;
+    int m = a[i];
+    int i;
     while(m!=0)
     {
         rem = m%10;
