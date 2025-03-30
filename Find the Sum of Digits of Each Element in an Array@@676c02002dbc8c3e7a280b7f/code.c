@@ -22,6 +22,8 @@ int main()
             m = m/10;
         }
 
+        printf("%d ", sum);
+
     }
 
     return 0;
