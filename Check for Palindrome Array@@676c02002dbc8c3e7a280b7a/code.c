@@ -30,7 +30,7 @@ int main()
         ispalindrome = 0;
         break;
     }
-    
+}  
     if(ispalindrome)
     {
         printf("YES");
@@ -39,6 +39,6 @@ int main()
     {
         printf("NO");
     }
-    }
+    
     return 0;
 }
