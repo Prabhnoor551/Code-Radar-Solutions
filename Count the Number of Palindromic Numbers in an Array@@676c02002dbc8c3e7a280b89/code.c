@@ -10,7 +10,7 @@ int main()
         scanf("%d ", &a[i]);
     }
 
-    int m,sum=0;
+    int m,rem,sum=0;
 
     if(m!=0)
     {
