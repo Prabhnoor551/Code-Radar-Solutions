@@ -38,7 +38,7 @@ int main() {
     // Read the number of rotations
     scanf("%d", &k);
     
-    k = k % n; // Handle cases where k > n
+    //k = k % n; // Handle cases where k > n
 
     // Reverse the entire array
     for (int i = 0, j = n - 1; i < j; i++, j--) {
