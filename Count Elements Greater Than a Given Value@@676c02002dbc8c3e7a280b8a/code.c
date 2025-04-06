@@ -10,7 +10,8 @@ int countGreaterThan(int arr[], int n, int value) {
         }
     }
 
-    return count;
+    // If no element is greater, return -1
+    return (count == 0) ? -1 : count;
 }
 
 int main() {
@@ -33,7 +34,8 @@ int main() {
     int result = countGreaterThan(arr, n, value);
 
     // Output the result
-    printf("%d",result);
+    printf("%d\n", result);
 
     return 0;
 }
+
