@@ -31,8 +31,8 @@ int main() {
     }
 
     // Call the function to find and print the median
-    double median = findMedian(arr, n);
-    printf("%.2f\n", median);
+    int median = findMedian(arr, n);
+    printf("%d", median);
 
     return 0;
 }
