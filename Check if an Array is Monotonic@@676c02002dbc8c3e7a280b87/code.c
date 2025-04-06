@@ -2,8 +2,9 @@
 #include <stdbool.h>
 
 bool isMonotonic(int arr[], int n) {
-    bool increasing = true;  // Assume the array is non-decreasing
-    bool decreasing = true;  // Assume the array is non-increasing
+    // Assume the array is both non-decreasing and non-increasing initially
+    bool increasing = true;  
+    bool decreasing = true;  
 
     // Traverse the array and check the conditions
     for (int i = 1; i < n; i++) {
@@ -15,7 +16,7 @@ bool isMonotonic(int arr[], int n) {
         }
     }
 
-    // If either increasing or decreasing is still true, the array is monotonic
+    // If either increasing or decreasing is true, the array is monotonic
     return increasing || decreasing;
 }
 
@@ -24,6 +25,12 @@ int main() {
 
     // Input the size of the array
     scanf("%d", &n);
+
+    // Ensure that the size is valid
+    if (n <= 0) {
+        printf("Invalid input. Array size must be greater than 0.\n");
+        return 1;  // Exit the program if the size is invalid
+    }
 
     int arr[n];
 
@@ -34,9 +41,9 @@ int main() {
 
     // Check if the array is monotonic
     if (isMonotonic(arr, n)) {
-        printf("YES\n");
+        printf("YES");
     } else {
-        printf("YES\n");
+        printf("NO");
     }
 
     return 0;
