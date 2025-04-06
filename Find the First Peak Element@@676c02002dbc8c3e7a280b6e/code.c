@@ -51,7 +51,7 @@ int main() {
     }
 
     // If no local maximum is found, print -1
-    printf("-1\n");
+    //printf("-1\n");
 
     return 0;
 }
