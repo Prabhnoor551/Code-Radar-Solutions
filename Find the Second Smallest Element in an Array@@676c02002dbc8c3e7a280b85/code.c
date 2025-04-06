@@ -48,6 +48,9 @@ int main() {
     {
         printf("%d ", result);
     }
+    else{
+        printf("-1");
+    }
 
     return 0;
 }
