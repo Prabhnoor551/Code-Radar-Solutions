@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int compare(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b); // Compare function for sorting
+}
+
 int main() {
     int n;
     scanf("%d", &n);  // Input the size of the array
@@ -15,32 +19,27 @@ int main() {
         return 0;
     }
 
+    // Sort the array to ensure the smallest difference is between consecutive elements
+    qsort(arr, n, sizeof(int), compare);
+
     // Initialize the minimum difference to a large number
     int min_diff = abs(arr[1] - arr[0]);
     int pair1 = arr[0], pair2 = arr[1];
 
-    // Compare every pair and update the minimum difference
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            int diff = abs(arr[j] - arr[i]);
-            if (diff < min_diff) {
-                min_diff = diff;
-                pair1 = arr[i];
-                pair2 = arr[j];
-            }
+    // Compare consecutive pairs for the smallest difference
+    for (int i = 1; i < n - 1; i++) {
+        int diff = abs(arr[i + 1] - arr[i]);
+        if (diff < min_diff) {
+            min_diff = diff;
+            pair1 = arr[i];
+            pair2 = arr[i + 1];
         }
     }
 
-    // Ensure pair1 < pair2
-    if (pair1 > pair2) {
-        int temp = pair1;
-        pair1 = pair2;
-        pair2 = temp;
-    }
-
     // Output the pair with the minimum difference
-    printf("%d %d", pair1, pair2);
+    printf("Pair with minimum difference: (%d, %d)\n", pair1, pair2);
     return 0;
 }
+
 
 
