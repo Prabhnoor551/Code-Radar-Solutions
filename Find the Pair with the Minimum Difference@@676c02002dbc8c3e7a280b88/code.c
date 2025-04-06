@@ -15,7 +15,7 @@ int main() {
     }
 
     if (n < 2) {
-        printf("No pairs available\n");
+        printf("-1\n");
         return 0;
     }
 
