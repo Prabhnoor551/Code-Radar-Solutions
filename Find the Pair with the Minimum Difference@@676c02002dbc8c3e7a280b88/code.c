@@ -31,8 +31,16 @@ int main() {
         }
     }
 
+    // Ensure pair1 < pair2
+    if (pair1 > pair2) {
+        int temp = pair1;
+        pair1 = pair2;
+        pair2 = temp;
+    }
+
     // Output the pair with the minimum difference
-    printf("%d %d", pair2, pair1);
+    printf("%d, %d", pair1, pair2);
     return 0;
 }
+
 
