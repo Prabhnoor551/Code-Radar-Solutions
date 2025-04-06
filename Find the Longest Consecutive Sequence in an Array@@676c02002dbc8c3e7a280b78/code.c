@@ -33,7 +33,7 @@ void findLongestConsecutiveSequence(int arr[], int n) {
         }
     }
 
-    printf("The length of the longest consecutive sequence is: %d\n", maxLength);
+    printf("%d\n", maxLength);
 }
 
 int main() {
