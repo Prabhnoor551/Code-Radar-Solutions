@@ -1,35 +1,36 @@
 #include <stdio.h>
+void countOccurrences(int arr[], int n, int target) {
+    int count = 0;
+
+    // Loop through the array and count occurrences of the target value
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == target) {
+            count++;
+        }
+    }
+
+    printf("%d", target, count);
+}
 
 int main() {
-    int n;
-    scanf("%d", &n);  // Input the number of elements in the array
+    int n, target;
 
-    int a[n];  // Declare the array
+    // Input size of array
+    scanf("%d", &n);
 
-    // Input array elements
+    int arr[n];
+
+    // Input the elements of the array
     for (int i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
+        scanf("%d", &arr[i]);
     }
 
-    // Count the digits of each element
-    for (int i = 0; i < n; i++) {
-        int num = a[i];
-        int count = 0;
-        
-        // If the number is 0, it has 1 digit
-        if (num == 0) {
-            count = 1;
-        } else {
-            // Count digits of the number
-            while (num != 0) {
-                num /= 10;
-                count++;
-            }
-        }
-        
-        // Print the number and its digit count
-        printf("%d", count);
-    }
+    // Input the target value to count
+    scanf("%d", &target);
+
+    // Call the function to count occurrences
+    countOccurrences(arr, n, target);
 
     return 0;
 }
+
