@@ -32,7 +32,7 @@ int main() {
 
     // Call the function to find and print the median
     double median = findMedian(arr, n);
-    printf("Median: %.2f\n", median);
+    printf("%.2f\n", median);
 
     return 0;
 }
