@@ -25,7 +25,7 @@ void findDuplicates(int arr[], int n) {
     int foundDuplicate = 0;
     for (int i = 0; i < n; i++) {
         if (hash[arr[i]] > 1) {  // If the frequency is greater than 1, it's a duplicate
-            printf("Duplicate element: %d\n", arr[i]);
+            printf("%d\n", arr[i]);
             hash[arr[i]] = 0;  // To ensure we don't print the same duplicate multiple times
             foundDuplicate = 1;
         }
