@@ -10,8 +10,7 @@ int countGreaterThan(int arr[], int n, int value) {
         }
     }
 
-    // If no element is greater, return -1
-    return (count == 0) ? -1 : count;
+    return count;
 }
 
 int main() {
@@ -38,4 +37,3 @@ int main() {
 
     return 0;
 }
-
