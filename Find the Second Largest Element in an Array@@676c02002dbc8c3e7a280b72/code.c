@@ -36,11 +36,13 @@ int main() {
 
     // Find and output the second largest element in the array
     int result = findSecondLargest(arr, n);
-    if (result == -1) {
-        printf("There is no second largest element.\n");
-    } else {
-        printf("The second largest element is: %d\n", result);
+    if (result != -1) 
+    {
+        printf("%d", result);
     }
+    else{
+        printf("-1");
+            }
 
     return 0;
 }
