@@ -36,7 +36,7 @@ int main() {
 
     // Count and output the number of prime numbers in the array
     int result = countPrimes(arr, n);
-    printf("The number of prime numbers in the array is: %d\n", result);
+    printf("%d", result);
 
     return 0;
 }
