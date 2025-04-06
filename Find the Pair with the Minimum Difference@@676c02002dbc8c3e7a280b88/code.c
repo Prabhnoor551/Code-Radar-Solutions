@@ -39,7 +39,7 @@ int main() {
     }
 
     // Output the pair with the minimum difference
-    printf("%d, %d", pair1, pair2);
+    printf("%d %d", pair1, pair2);
     return 0;
 }
 
