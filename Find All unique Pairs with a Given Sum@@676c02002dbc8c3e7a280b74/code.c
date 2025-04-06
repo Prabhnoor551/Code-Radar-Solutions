@@ -20,7 +20,7 @@ void findPairsWithSum(int arr[], int n, int target) {
 
         // If the current sum matches the target
         if (currentSum == target) {
-            printf("%d %d\n", arr[left], arr[right]);
+            printf("%d %d", arr[left], arr[right]);
             left++;  // Move left pointer to the right
             right--; // Move right pointer to the left
         }
