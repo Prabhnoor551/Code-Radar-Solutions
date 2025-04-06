@@ -33,7 +33,7 @@ int main() {
 
     // Output the result
     if (result == -1) {
-        printf("No even number found.\n");
+        printf("-1\n");
     } else {
         printf("%d", result);
     }
