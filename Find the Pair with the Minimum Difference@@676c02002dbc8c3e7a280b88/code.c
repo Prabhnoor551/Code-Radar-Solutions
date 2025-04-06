@@ -37,7 +37,7 @@ int main() {
     }
 
     // Output the pair with the minimum difference
-    printf("Pair with minimum difference: (%d, %d)\n", pair1, pair2);
+    printf("%d %d", pair1, pair2);
     return 0;
 }
 
